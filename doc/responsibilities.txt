@@ -1,0 +1,48 @@
+### Responsibilities: Calculating Debye diffraction pattern ###
+
+Selecting the source of the sample (xyz-file, generated lattice,...)
+
+Generate lattice
+Shape the lattice (Wulff constructions etc...)
+Read xyz-file from disc
+
+Select and generate binning in realspace
+Select and generate binning in reciprocal space
+
+Calculate histogram (Java, Fortran,...)
+Calculate Intensities (normal, stochastic,...)
+
+Keep track of calculation times
+
+Display diffraction pattern
+
+Calculate distances to other atoms
+Know distances to other atoms
+
+<<interface>> Sample
+Know positions of atoms
+Add/remove atoms to/from sample
+Get group of certain atoms from sample
+Move atoms around
+
+<<interface>> DistanceCalculator
+Calculate (and store) interatomic distances (between one group of atoms to another)
+Create histogram of distances
+Modify histogram (when atom is moved)
+Save/load histogram to/from disc/database
+
+<<interface>> Atom
+Know characteristic constants for atom
+
+<<interface>> "Viewer"
+Show diffraction pattern
+
+<<interface>> Diffractor (Controller in MVC)
+Move atoms around
+Calculate diffraction pattern
+
+
+<<interface>> IOHandler
+Load previously calculated diffraction pattern from disc
+Save diffraction pattern to disc
+Load/save histogram from/to disc
