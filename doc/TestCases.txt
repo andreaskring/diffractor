@@ -1,0 +1,10 @@
+## Atom ""
+[OK] Atom should store element
+[OK] Atom should return correct element
+[OK] Atom should return correct form factor value for single Q=2 value for H
+[OK] Atom should return correct form factor value for single Q=3 value for H
+[OK] Atom should return correct form factor value for single Q=7 value for Au
+Atom should return correct form factor values for single Q values for H
+Atom should return correct form factor values for single Q values for Au
+[OK] Atom should throw exception when null element is given
+[OK] Atom should throw exception when Q < 0

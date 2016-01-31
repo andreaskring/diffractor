@@ -1,7 +1,11 @@
 package dk.openforce.diffraction;
 
+/**
+* @author Andreas Kring <kring@openforce.dk>
+*/
 public enum Element {
-	H ("H", 0.489918, 0.262003, 0.196767, 0.049879,	20.6593, 7.74039, 49.5519, 2.20159,	0.001305);
+	H ("H", 0.489918, 0.262003, 0.196767, 0.049879,	20.6593, 7.74039, 49.5519, 2.20159,	0.001305),
+	Au ("Au", 16.8819, 18.5913, 25.5582, 5.86000, 0.461100, 8.62160, 1.48260, 36.3956, 12.0658);
 
 	private final String symbol;
 	private final double[] a;

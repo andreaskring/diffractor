@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+* @author Andreas Kring <kring@openforce.dk>
+*/
 public class TestElement {
 
 	private Element H = Element.H;
