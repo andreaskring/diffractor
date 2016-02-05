@@ -11,7 +11,6 @@ import dk.openforce.diffraction.exception.IllegalElementException;
 */
 public class TestAtom {
 	
-	private final double tolerance = 1e-8;
 	private Atom atomH = new AtomImpl(Element.H);
 	private Atom atomAu = new AtomImpl(Element.Au);
 	
@@ -33,17 +32,17 @@ public class TestAtom {
 	
 	@Test
 	public void shouldReturnCorrectFormFactorForElementHAndQ_2() {
-		assertEquals(1.8899243237974557, atomH.atomicFormFactor(2.0), tolerance);
+		assertEquals(1.8899243237974557, atomH.atomicFormFactor(2.0), TestConstants.tolerance);
 	}
 	
 	@Test
 	public void shouldReturnCorrectFormFactorForElementHAndQ_3() {
-		assertEquals(5.3701905015500282, atomH.atomicFormFactor(3.0), tolerance);
+		assertEquals(5.3701905015500282, atomH.atomicFormFactor(3.0), TestConstants.tolerance);
 	}
 	
 	@Test
 	public void shouldReturnCorrectFormFactorForElementAuAndQ_7() {
-		assertEquals(470847.55336693, atomAu.atomicFormFactor(7.0), tolerance);
+		assertEquals(470847.55336693, atomAu.atomicFormFactor(7.0), TestConstants.tolerance);
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
